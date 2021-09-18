@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+    <head>
+        <title>Student result</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid px-1 py-5 mx-auto">
+            <h2>Student registered!</h2>
+            <p th:text="'Student ID: ' + ${student.studentId}" />
+            <p th:text="'First name: ' + ${student.firstName}" />
+            <p th:text="'Last name: ' + ${student.lastName}" />
+            <p th:text="'Email: ' + ${student.email}" />
+            <p th:text="'Average score: ' + ${student.averageScore}" />
+        </div>
+    </body>
+</html>
